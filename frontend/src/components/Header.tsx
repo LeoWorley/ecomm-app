@@ -18,6 +18,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AddIcon from '@mui/icons-material/Add';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -137,6 +138,13 @@ const Header: React.FC = () => {
             color="inherit"
           >
             <AccountCircle />
+          </IconButton>
+          <IconButton size="large" aria-label="show 4 items in cart" color="inherit">
+            <Badge badgeContent={3} color="error">
+              <ShoppingCartIcon>
+                {/*ICON SHOP*/}
+              </ShoppingCartIcon>
+            </Badge>
           </IconButton>
         </Box>
       </Toolbar>
